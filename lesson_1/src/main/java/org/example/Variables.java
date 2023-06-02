@@ -4,7 +4,7 @@ package org.example;
 // then press Enter. You can now see whitespace characters in your code.
 public class Variables {
     public static void main(String[] args) {
-        // char
+        /*// char
         char a = 'a';
         // integers
         byte b = 126;
@@ -18,9 +18,15 @@ public class Variables {
         boolean bool = true;
         boolean bool1 = false;
         //ссылочный тип
-        String str = "Hello";
+        //String str = "Hello"; */
+ //       int c = 9;
+ //       int d = 2;
+//        int result = c % d;
 
-        System.out.println(d);
+          int g = 10;
+          System.out.println(g++);
+          System.out.println(++g);
+
 
 
     }
