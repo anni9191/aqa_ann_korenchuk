@@ -1,7 +1,7 @@
 package org.hillel.dance;
-
+/*
 public class Ballet extends Dance {
-    public class Ballet
+    public class Ballet {
         int year;
         String type;
         String[] positions;
@@ -19,3 +19,4 @@ public class Ballet extends Dance {
 
     }
 }
+*/
