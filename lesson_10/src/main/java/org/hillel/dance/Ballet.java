@@ -1,22 +1,31 @@
 package org.hillel.dance;
-/*
+
 public class Ballet extends Dance {
-    public class Ballet {
-        int year;
-        String type;
-        String[] positions;
 
-        public Ballet(int choreography, String name, int year, String type, String[] positions) {
-            super(choreography, name);
-            this.year = year;
+    public int year;
+    private String type;
+    public String[] positions;
+
+
+    public Ballet(int choreography, String name, int year, String type, String[] positions) {
+        super(choreography, name);
+        this.year = year;
+        this.type = type;
+        this.positions = positions;
+        countryOfDance = "France";
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        if (type != null) {
             this.type = type;
-            this.positions = positions;
-        }
-
-        public Ballet(int choreography) {
-            this.choreorgaphy = choreography;
+        } else {
+            System.out.println("You are trying to set null");
         }
 
     }
+
 }
-*/
