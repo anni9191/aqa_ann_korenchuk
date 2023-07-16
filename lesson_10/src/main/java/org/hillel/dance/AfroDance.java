@@ -9,14 +9,26 @@ public class AfroDance extends Dance {
 
   */
 
-    public AfroDance(int choreography, String name, String moves, int yearOfCreation) {
-        super(choreography, name);
+    public AfroDance(int choreography, String name, String moves, int yearOfCreation, int priceForLesson) {
+        super(choreography, name, priceForLesson);
         this.moves = moves;
         this.yearOfCreation = yearOfCreation;
         countryOfDance = "Africa";
     }
+
+    @Override
+    public int calculatePriceForLesson() {
+        return 0;
+    }
+
     public AfroDance() {
-
-
         }
+
+    @Override
+    public String toString() {
+        return "AfroDance{" +
+                "moves='" + moves + '\'' +
+                ", yearOfCreation=" + yearOfCreation +
+                '}';
+    }
 }

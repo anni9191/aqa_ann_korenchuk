@@ -1,14 +1,16 @@
 package org.hillel.dance;
 
-public class Ballet extends Dance {
+import java.util.Arrays;
+
+public abstract class Ballet extends Dance {
 
     public int year;
     private String type;
     public String[] positions;
 
 
-    public Ballet(int choreography, String name, int year, String type, String[] positions) {
-        super(choreography, name);
+    public Ballet(int choreography, String name, int year, String type, String[] positions, int priceForLesson) {
+        super(choreography, name, priceForLesson);
         this.year = year;
         this.type = type;
         this.positions = positions;
@@ -28,4 +30,12 @@ public class Ballet extends Dance {
 
     }
 
+    @Override
+    public String toString() {
+        return "Ballet{" +
+                "year=" + year +
+                ", type='" + type + '\'' +
+                ", positions=" + Arrays.toString(positions) +
+                '}';
+    }
 }

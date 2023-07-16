@@ -5,8 +5,8 @@ public class HipHop extends AfroDance{
         public String choreographer;
         public String style;
 
-        public HipHop (int choreography, String name, String moves, int yearOfCreation, String choreographer, String style) {
-            super(choreography, name, moves, yearOfCreation);
+        public HipHop (int choreography, String name, String moves, int yearOfCreation, String choreographer, String style, int priceForLesson) {
+            super(choreography, name, moves, yearOfCreation, priceForLesson);
             this.choreographer = choreographer;
             this.style = style;
             countryOfDance = "USA";
@@ -16,5 +16,13 @@ public class HipHop extends AfroDance{
             this.choreographer = choreographer;
             this.style = style;
         }
+
+    @Override
+    public String toString() {
+        return "HipHop{" +
+                "choreographer='" + choreographer + '\'' +
+                ", style='" + style + '\'' +
+                '}';
+    }
 
 }
