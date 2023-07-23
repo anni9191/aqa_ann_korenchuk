@@ -1,5 +1,5 @@
 package org.example;
 
-interface LinuxOS {
+ interface LinuxOS {
     void openSource();
 }

@@ -1,11 +1,5 @@
 public class homework_13 {
-    interface Smartphones {
 
-        void call();
-        void sms();
-        void internet();
-
-    }
 
 
     interface LinuxOS {
@@ -74,35 +68,6 @@ public class homework_13 {
         public void icloud() {
 
             System.out.println("Using iCloud from iPhone...");
-
-        }
-
-    }
-
-
-    public class Main {
-
-        public static void main(String[] args) {
-
-            Androids android = new Androids();
-
-            android.call();
-
-            android.sms();
-
-            android.internet();
-
-            android.openSource();
-
-            iPhones iPhone = new iPhones();
-
-            iPhone.call();
-
-            iPhone.sms();
-
-            iPhone.internet();
-
-            iPhone.icloud();
 
         }
 
