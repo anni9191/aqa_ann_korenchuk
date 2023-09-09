@@ -1,9 +1,6 @@
 package com.hillel.calculator;
 
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.DisplayName;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.*;
 
 public class CalculatorTest {
 
@@ -11,6 +8,7 @@ public class CalculatorTest {
 
     @BeforeAll
     public static void init() {
+        System.out.println("Calculator was created");
         calculator = new Calculator();
     }
 
@@ -80,6 +78,19 @@ public class CalculatorTest {
         int result = 8;
         int actualResult = calculator.substact(k,m);
         Assertions.assertTrue(result == actualResult, "actual result:" + actualResult + " expected was:" + result);
+    }
+
+    @AfterAll
+    public static void close(){
+        System.out.println("All Tests was finished");
+    }
+
+    @Test
+    public void getException() {
+        int a = 10;
+        int b = 0;
+        ArithmeticException exception = Assertions.assertThrows(ArithmeticException.class, () -> calculator.division(a, b));
+        Assertions.assertEquals("/ by zero", exception.getMessage());
     }
 }
 
