@@ -3,10 +3,7 @@ package com.hillel.patterns.pageobjectpattern.rayban.logintest.registertest.logi
 import org.hillel.paterns.factory.BrowserName;
 import org.hillel.paterns.factory.WebDriverFactory;
 import org.hillel.paterns.pageobjectpatern.rayban.flows.login.LoginFlow;
-import org.junit.jupiter.api.AfterAll;
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.*;
 import org.openqa.selenium.WebDriver;
 
 public class LoginFlowTest {
@@ -23,6 +20,12 @@ public class LoginFlowTest {
         driver.get("https://www.sunglasshut.com/uk");
         closePopUp(driver);
     }
+
+//    @AfterEach
+//    public void killDriver(){
+//    driver.quit();
+//    }
+
 
     private static void closePopUp(WebDriver driver) {
     }

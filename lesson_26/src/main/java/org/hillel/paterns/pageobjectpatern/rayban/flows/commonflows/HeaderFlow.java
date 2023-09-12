@@ -1,16 +1,17 @@
 package org.hillel.paterns.pageobjectpatern.rayban.flows.commonflows;
 
-import org.hillel.paterns.pageobjectpatern.rayban.pages.register.commomFragments.HeaderMenu;
+import org.hillel.paterns.pageobjectpatern.rayban.adstract.AbstractPage;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 
-public class HeaderFlow {
-    private HeaderMenu headerMenu;
+public class HeaderFlow extends AbstractPage {
+    private static final By LOGIN_ICON = By.xpath("//input[@class='rb-btn rb-btn--black ui-state-valid']");
 
     public HeaderFlow(WebDriver driver) {
-        this.headerMenu = new HeaderMenu(driver);
+        super (driver);
     }
-
-    public void navigateToLogin(){
-        headerMenu.getLoginIcon().click();
+    public WebElement getLoginIcon() {
+        return driver.findElement(LOGIN_ICON);
     }
 }

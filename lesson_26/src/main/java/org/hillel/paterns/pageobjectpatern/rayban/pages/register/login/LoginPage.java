@@ -4,6 +4,9 @@ import org.hillel.paterns.pageobjectpatern.rayban.adstract.AbstractPage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+
+import static org.hillel.paterns.pageobjectpatern.rayban.utils.WaiterManager.waitUntilElementIsVisible;
 
 public class LoginPage extends AbstractPage {
 
@@ -23,12 +26,11 @@ public class LoginPage extends AbstractPage {
     }
 
     public WebElement getEMAIL_FIELD(){
-        return driver.findElement(EMAIL_FIELD);
-
+        return driverWait.until(ExpectedConditions.visibilityOfElementLocated(EMAIL_FIELD));
     }
 
     public WebElement getPASSWORD_FIELD(){
-        return driver.findElement(PASSWORD_FIELD);
+        return waitUntilElementIsVisible(driver, PASSWORD_FIELD);
 
     }
 

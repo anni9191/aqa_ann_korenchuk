@@ -7,9 +7,11 @@ public class RegistrationFlow {
     private RegistrationFlow registrationFlow;
 
     public RegistrationFlow(WebDriver driver) {
+
         this.registrationFlow = new RegistrationPage(driver);
     }
     public String getTitlePage(){
+
         return registrationPage.getPAGE_TITLE().getText();
     }
 }
