@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="lesson_21"
+           tests="2"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="0.116">
+    <properties></properties>
+
+
+
+            <testcase
+                name="summTest"
+                time="0.016"
+                classname="com.hillel.calc.CalculatorDataTest">
+            </testcase>
+            <testcase
+                name="summTest"
+                time="0.100"
+                classname="com.hillel.calc.CalculatorDataTest">
+            </testcase>
+</testsuite>

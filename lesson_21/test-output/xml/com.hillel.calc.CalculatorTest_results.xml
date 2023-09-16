@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="test summ positive"
+           tests="3"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="0.037">
+    <properties></properties>
+
+
+
+            <testcase
+                name="summTest"
+                time="0.004"
+                classname="com.hillel.calc.CalculatorTest">
+            </testcase>
+            <testcase
+                name="test1"
+                time="0.023"
+                classname="com.hillel.calc.CalculatorTest">
+            </testcase>
+            <testcase
+                name="summTest1"
+                time="0.010"
+                classname="com.hillel.calc.CalculatorTest">
+            </testcase>
+</testsuite>
